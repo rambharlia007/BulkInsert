@@ -56,7 +56,11 @@ Sample usage example
  
  using (var connection = new SqlConnection(connectionString))
  {
-   connection.BulkInsert("DestinationTableName", ListData, new BulkCopySettings { BatchSize = 10000, BulkCopyTimeout = 300 });
+   connection.BulkInsert("DestinationTableName", ListData, new BulkCopySettings 
+   { 
+     BatchSize = 10000, 
+     BulkCopyTimeout = 300 
+    });
  }
 
  using (var connection = new SqlConnection(connectionString))
