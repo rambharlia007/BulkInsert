@@ -12,6 +12,7 @@ Sample usage example
 // Add Sql Column mapping using BulkInsertMapping Attribute
 // To Exclude property from column mapping use [BulkInsertMapping(false)]
 // If BulkInsertMapping attribute is not present, both source and destination column name will be equivalent to property name
+// If Property name and table column name are different then use 
 // [BulkInsertMapping("Source", "Destination", true)]
 
    public class Test
