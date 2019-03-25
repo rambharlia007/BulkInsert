@@ -12,7 +12,7 @@ Sample usage example
 // Add Sql Column mapping using BulkInsertMapping Attribute
 // To Exclude property from column mapping use [BulkInsertMapping(false)]
 // If BulkInsertMapping attribute is not present, both source and destination column name will be equivalent to property name
-// [BulkInsertMapping("Source", "Destination")]
+// [BulkInsertMapping("Source", "Destination", true)]
 
    public class Test
    {
@@ -34,11 +34,11 @@ Sample usage example
         [BulkInsertMapping(false)]
         public int Id { get; set; }
 
-        [BulkInsertMapping("Name", "DestName")]
+        [BulkInsertMapping("Name", "DestName", true)]
         public string Name { get; set; }
         public int IntCheck { get; set; }
         public long LongId { get; set; }
-        [BulkInsertMapping("BoolCheck", "DestBoolCheck")]
+        [BulkInsertMapping("BoolCheck", "DestBoolCheck", true)]
         public bool BoolCheck { get; set; }
         public decimal DecimalCheck { get; set; }
         public float FloatCheck { get; set; }
